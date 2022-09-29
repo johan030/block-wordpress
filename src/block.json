@@ -4,17 +4,21 @@
 	"name": "create-block/bootstrapblock",
 	"version": "0.1.0",
 	"title": "Bootstrap Block",
-	"attributes": {
-		"message": {
-			"type": "string",
-			"source": "text",
-			"selector": "div",
-			"default": ""
-		},
-		"class": {
-			"type": "string"
-		}
-	},
+	"attributes": { 
+        "content": {
+          "type": "string",
+		  "source": "html",
+		  "selector": "p"
+
+        },
+         "align": {
+           "type": "string"
+         },
+         "type": {
+           "type": "string",
+           "default": "advice"
+        }
+},
 	
 	
 	"category": "widgets",
@@ -23,7 +27,6 @@
 	"supports": {
 		"html": false
 	},
-	"textdomain": "bootstrapblock",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css"

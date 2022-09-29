@@ -5,14 +5,17 @@
   "version": "0.1.0",
   "title": "Bootstrap Block",
   "attributes": {
-    "message": {
+    "content": {
       "type": "string",
-      "source": "text",
-      "selector": "div",
-      "default": ""
+      "source": "html",
+      "selector": "p"
     },
-    "class": {
+    "align": {
       "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "default": "advice"
     }
   },
   "category": "widgets",
@@ -21,7 +24,6 @@
   "supports": {
     "html": false
   },
-  "textdomain": "bootstrapblock",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css"

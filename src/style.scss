@@ -1,25 +1,35 @@
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
-
+@import 'vars'; 
 .wp-block-create-block-bootstrapblock {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+	padding: 15px;
+	border-left: 5px solid;
+	border-radius: 4px;
+	color: white;
+	p:last-child {	p:last-child {
+		margin-bottom: 0;
+	}
+		margin-bottom: 0;
+	}
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+	// Style Conseil
+	&.is-success {
+		background: $green;
+		border-color: darken($green, 20%);
+	}
+
+	// Style Avertissement
+	&.is-warning {
+		background: $yellow;
+		border-color: darken($yellow, 20%);
+	}
+
+	// Style Interdiction
+	&.is-avoid {
+		background: $red;
+		border-color: darken($red, 20%);
+	}
 }
 
-.alert-success{
-	background-color: green;
-}
-.alert-danger {
-	background-color: red;
-}
-.alert-secondary {
-	background-color: gray;
-}
-.alert-warning {
-	background-color: yellow;
-}
+
